@@ -12,20 +12,20 @@ A basic health-check endpoint is available at `/how/you/doing` to see if the ser
 
 The server is implemented in Go, which yields a minimal memory (and Docker image) footprint.
 
-# Usage
+## Usage
 
 - Create a Docker volume: `docker volume create seqsy`
 - Run Docker image: `docker run -d --name seqsy -v seqsy:/data -P 8080:8080 idrm/seqsy:1.0.0`
 - Get a sequence number: `curl http://localhost:8080/`
 
-# Building
+## Building
 
 Run `docker build -t idrm/seqsy:1.0.0 .`
 
-# License
+## License
 
 Apache 2.0
 
-# Miscellaneous
+## Miscellaneous
 
 Yes, it's pronounced as you thought -- "six-eye".
